@@ -560,6 +560,30 @@ nav ul li:hover{
 
 /*End Home main-content*/
 
+/*Start About Us*/
+
+.aboutinfo{ 
+  margin: 0 auto;
+  max-width: 1000px;
+  display: grid;
+  grid-template-rows: auto;
+  font-family: sans-serif;
+  margin-bottom: 200px;
+  gap: 20px;
+}
+
+.about {
+  line-height: 1.5;
+  font-size: 0.9em;
+  padding: 15px;
+  background:#fafafa;
+}
+
+.about ul {
+  padding-left: 10px;
+}
+
+/*End About Us*/
 
 /*StartFooter*/
 footer{
