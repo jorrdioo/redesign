@@ -560,6 +560,79 @@ nav ul li:hover{
 
 /*End Home main-content*/
 
+  /* Contact */
+
+form {
+  margin-bottom: 2.618rem;
+  margin-left: 2.618rem;
+}
+
+fieldset {
+  margin: 0;
+  margin-bottom: 1.618rem;
+  padding: 0.5rem 1rem 1rem;
+}
+
+fieldset legend {
+  color: #D75A00;
+  font-weight: 700;
+  font-family: sans-serif;
+}
+
+fieldset p, 
+fieldset h3 {
+  margin: 0;
+  padding-bottom: 1rem;
+}
+
+.form-group {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: flex-start;
+}
+
+.form.group .form-control {
+  flex: 0 0 100%;
+  min-width: 1rem;
+  font-size: inherit;
+  color: inherit;
+  font-family: inherit;
+  padding: 0.25rem 0;
+  border-radius: 0;
+  border: 0 none;
+  border-bottom: 0.5px solid black;
+
+}
+
+.btn,
+a.btn:link,
+a.btn:active,
+a.btn:hover,
+a.btn:visited {
+    display: inline-block;
+    overflow: hidden;
+    padding: 0.375rem 0.75rem;
+    background-color: #ED7C30;
+    color: #efefef;
+
+}
+
+  .contact a{
+    color:  #ED7C30;
+    margin-right: 25px;
+    font-size: 18px;
+    text-decoration: none;
+  }
+
+  .contact a:hover{
+    color: #D75A00
+  }
+
+  /* End Contact */
+
+
 /*Start About Us*/
 
 .aboutinfo{ 
