@@ -429,18 +429,6 @@
 
 /*End of Grid System*/
 
-/*Color Pallete*/
-/*
-#FAB386 20
-#F59557 30
-#ED7C30 40
-#E46913 50
-#D75A00 60
-#C75700 70
-#B35100 80
-#9E4A00 90
-#874100 100
-/*End of Color Pallete*/
 /*nav start*/
 .navbar{
   display: flex;
@@ -472,11 +460,11 @@ a{
 }
 
 nav a:hover{
-  color:#ED7C30;
+  color:#FF4E00;
 }
 
 nav ul li:hover{
-  color:#ED7C30;
+  color:#FF4E00;
 }
 
 .logo img{
@@ -533,7 +521,7 @@ nav ul li:hover{
 }
 
 .card__link{
-  color: #ED7C30;
+  color: #FF4E00;
   text-decoration: none;
 }
 
@@ -586,7 +574,7 @@ fieldset {
 }
 
 fieldset legend {
-  color: #D75A00;
+  color: #FF4E00;
   font-weight: 700;
   font-family: sans-serif;
 }
@@ -626,20 +614,20 @@ a.btn:visited {
     display: inline-block;
     overflow: hidden;
     padding: 0.375rem 0.75rem;
-    background-color: #ED7C30;
+    background-color: #FF4E00;
     color: #efefef;
 
 }
 
   .contact a{
-    color:  #ED7C30;
+    color:  #FF4E00;
     margin-right: 25px;
     font-size: 18px;
     text-decoration: none;
   }
 
   .contact a:hover{
-    color: #D75A00
+    color: #FF4E00
   }
 
   /* End Contact */
@@ -710,12 +698,12 @@ footer{
 }
 
 .social-media a:hover{
-  color: #ED7C30;
+  color: #FF4E00;
 }
 
 .right-col h1{
   font-size: 40px;
-  color: #D75A00;
+  color: #FF4E00;
 }
 
 .border{
@@ -748,6 +736,11 @@ footer{
   outline: none;
   border-radius: 30px;
   min-width: 260px;
+}
+
+h1{
+  color: #FF4E00;
+  margin-left: 1em;
 }
 
 /*End of Footer*/
