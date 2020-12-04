@@ -558,6 +558,18 @@ nav ul li:hover{
   margin-bottom: 75px;
 }
 
+.product-head-1{
+  margin-left:80px;
+  margin-bottom: 25px;
+  margin-top: 40px;
+}
+
+.product-head{
+  margin-left:80px;
+  margin-top: -75px;
+}
+
+
 /*End Home main-content*/
 
   /* Contact */
