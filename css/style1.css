@@ -4,6 +4,12 @@
   box-sizing: border-box;
 }
 
+*, :before, :after{
+    box-sizing: border-box;
+    position: relative;
+
+}
+
 /*Grid System*/
 .container,
 .container-fluid{
@@ -430,41 +436,145 @@
 /*End of Grid System*/
 
 /*nav start*/
-.navbar{
-  display: flex;
-  align-items: center;
-  padding: 20px;
-  background-color:#000;
+header {
+  padding: 1rem;
+  margin-bottom: 2.618rem;
+  background-color: black;
 
 }
 
 nav{
   flex: 1;
-  text-align: right;
+  text-align: match-parent; 
+  display: flex;
+  flex-flow: row wrap;
+  align-items: flex-start;
+  align-content: flex-start;
+  justify-content: space-between;
+  color: #efefef;
 }
+
+
 
 nav ul{
- display: inline-block;
- list-style-type: none;
+  display: inline-block;
+  list-style-type: none;
+ }
+ 
+ nav ul li{
+   display: inline-block;
+   margin-right: 20px;
+   color: white;
+ }
+
+.navbar-toggler {
+
+  border: 0 none;
+  background-color:#FF4E00;
+  color: #ffffff;
+  width: 2rem;
+  height: 2rem;
+  flex: 0 0 2rem;
+  max-width: 2rem;
+  font-size: 1rem;
+  line-height: 1em; 
+  cursor: pointer;
 }
 
-nav ul li{
-  display: inline-block;
-  margin-right: 20px;
-  color: white;
+.navbar {
+  flex: 0 0 100%;
+  max-width: 100%;
+  display: none;
+}
+.navbar.open {
+  display: list-item;
 }
 
 a{
   text-decoration: none;
   color: #fafafa;
+  position: relative;
 }
 
-nav a:hover{
-  color:#FF4E00;
+.navbar a:link,
+.navbar a:active,
+.navbar a:hover,
+.navbar a:visited {
+    display: block;
+    overflow: hidden;
+    padding: 0.5rem 0.75rem;
+    text-decoration: none;
 }
 
-nav ul li:hover{
-  color:#FF4E00;
+.navbar .dropdown > a:after {
+    content: "\f0d7"; 
+    font-family: "Font Awesome 5 Pro";
+    font-weight: 900;
+    position: absolute;
+    right: 0;
+}
+
+.navbar .dropdown.open > a:after {
+    content: "\f0d8";
+}
+
+.navbar .dropdown ul {
+    display: none;
+}
+
+.navbar .dropdown.open ul {
+    display: block;
+}
+
+a:hover {
+  color: #FF4E00;
+}
+
+.navbar .dropdown ul a:link,
+.navbar .dropdown ul a:active,
+.navbar .dropdown ul a:hover,
+.navbar .dropdown ul a:visited {
+    background-color:#FF4E00;
+    color: #ffffff;
+}
+
+.navbar .dropdown ul a:hover {
+    background-color:#FF4E00;
+}
+
+@media screen and (min-width: 768px){
+    .navbar-brand {
+        flex: 0 0 180px;
+        max-width: 180px;
+    }
+
+    .navbar-toggler {
+        display: none;
+    }
+    .navbar {
+        display: block;
+        flex: 0 1 calc(100% - 220px);
+        max-width:  0 1 calc(100% - 220px);
+        text-align: right;
+    }
+
+    .navbar > li {
+        display: inline-block;
+    }
+
+    .navbar .dropdown ul {
+        position: absolute;
+        z-index: 1;
+        width: 200px;
+        text-align: left;
+    }
+}
+.navbar,
+.navbar ul,
+.navbar li {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
 }
 
 .logo img{
