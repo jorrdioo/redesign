@@ -667,6 +667,10 @@ a:hover {
   margin-top: -75px;
 }
 
+.product-head-1 a {
+  text-decoration: underline;
+}
+
 
 /*End Home main-content*/
 
