@@ -538,7 +538,7 @@ a:hover {
 }
 
 .navbar .dropdown ul a:hover {
-    background-color:#FF4E00;
+    background-color: darkorange;
 }
 
 @media screen and (min-width: 768px){
